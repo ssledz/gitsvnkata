@@ -1,14 +1,5 @@
 #! /bin/bash
 
-SVN_REPO_DIR_NAME=svn-repo
-PROJECT_NAME=sample-project
-SVN_DIR=svn
-ROOT_DIR=`pwd`
-
-echo 'Cleaning'
-rm -rf $SVN_REPO_DIR_NAME
-rm -rf $SVN_DIR
-
 mkdir $SVN_REPO_DIR_NAME
 cd $SVN_REPO_DIR_NAME
 echo "Creating svn repository for $PROJECT_NAME"
