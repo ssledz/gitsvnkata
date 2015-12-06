@@ -31,7 +31,7 @@ cd $ROOT_DIR
 ```
 ROOT_DIR=`pwd`
 cd git
-git svn clone --prefix=origin/ -s -r 5:HEAD file:///$ROOT_DIR/svn-repo/kata kata
+git svn clone --prefix=origin/ -s -r5:HEAD file:///$ROOT_DIR/svn-repo/kata kata
 git log --pretty=oneline
 cd $ROOT_DIR
 ```
