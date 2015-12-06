@@ -25,3 +25,13 @@ git branch -a
 git show-ref
 cd $ROOT_DIR
 ```
+
+#kata-3-checkout-svn-project-5-last-commits
+
+```
+ROOT_DIR=`pwd`
+cd git
+git svn clone --prefix=origin/ -s -r 5:HEAD file:///$ROOT_DIR/svn-repo/kata kata
+git log --pretty=oneline
+cd $ROOT_DIR
+```
